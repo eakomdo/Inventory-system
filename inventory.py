@@ -65,3 +65,4 @@ print(f"Item 5: {Inventory['items_5']['name']}")
 print(f"Quantity: {Inventory['items_5']['quantity']}, Price: ${Inventory['items_5']['price']}")
 
 
+# Add a new item
