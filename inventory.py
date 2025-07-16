@@ -90,3 +90,10 @@ print(f"\nUpdated stock for items_5: {Inventory['items_5']['name']}")
 Inventory.pop('items_2', None)  # Remove item 2 (Candy)
 print("\nItem 2 (Candy) has been deleted from the inventory.")
 print("Updated Inventory:")
+
+print(f"{Inventory}")
+
+
+# Calculate total stock value
+total_value = sum(item['stock'] * item['price'] for item in Inventory.values())
+print(f"\nTotal stock value: ${total_value:.2f}")
