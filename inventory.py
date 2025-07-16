@@ -74,8 +74,6 @@ Inventory.update({
     }
 })
 
-# Assign the updated inventory to a new variable
-Updated_Inventory = Inventory
 
 print(f"\nNew item added is items_6: {Inventory['items_6']['name']}")
 print(f"Stock: {Inventory['items_6']['stock']}, Price: ${Inventory['items_6']['price']}")
@@ -85,3 +83,10 @@ print(f"Stock: {Inventory['items_6']['stock']}, Price: ${Inventory['items_6']['p
 
 Inventory['items_5']['stock'] += 5  # Add 5 to current stock
 print(f"\nUpdated stock for items_5: {Inventory['items_5']['name']}")
+
+
+# Delete an item
+
+Inventory.pop('items_2', None)  # Remove item 2 (Candy)
+print("\nItem 2 (Candy) has been deleted from the inventory.")
+print("Updated Inventory:")
